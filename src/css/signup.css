@@ -1,0 +1,91 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* width for input fields */
+input[type=text], input[type=password],input[type=email] {
+    width: 100%;
+    height: 25px;
+    font-size: 10px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* syle for the h1*/
+h1{
+    color: #61210B;;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif
+}
+
+/* Set a style for sign up button */
+.signupbtn {
+    background-color: #61210B;;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    margin-left: 25%;
+    width: 50%;
+}
+
+.signupbtn {
+    opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    width: 30%;
+    border-radius: 100%;
+    margin-left: 35%;
+}
+
+img.food{
+    border-radius: 100%;
+    width: 120px;
+}
+
+/* style for the container */
+.container {
+    padding: 16px;
+}
+
+
+/* The Modal (background) */
+.signupmodal {
+     /* Hidden by default */
+    position: relative; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    align-content: center;   
+    margin-left: 30%;
+    margin-top: 2%;
+    width: 40%; /* Full width */
+    height: 30%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content/Box */
+.signupmodal-content {
+    background-color: #fefefe;
+    margin: 1% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 25%; /* Could be more or less, depending on screen size */
+    height: 550px
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
