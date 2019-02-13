@@ -93,8 +93,5 @@ export class Register extends React.Component {
   }
 }
 
-// Register.prototype={
-//   signUp:PropTypes.func.isRequired
-// }
 
 export default connect(null, {signUp})(Register);
