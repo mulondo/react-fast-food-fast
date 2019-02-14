@@ -6,6 +6,8 @@ import './App.css';
 import './App.scss';
 import './css/signup.css';
 import Register from './components/auth/Signup';
+import Userlogin from './components/auth/login';
+import Menu from './components/menu/menu';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -15,6 +17,9 @@ export class App extends Component {
       <Router>
             <div className="App d-flex flex-column">
             <Route exact path="/signup" component={Register} />
+            <Route exact path="/menu" component={Menu} />
+            <Route exact path="/" component={Userlogin}/>
+            <Route exact path="/login" component={Userlogin}/>
         </div>
       </Router>
     );

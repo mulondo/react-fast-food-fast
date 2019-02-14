@@ -1,10 +1,7 @@
-import Enzyme from 'enzyme';
-import EnzymeAdapter from 'enzyme-adapter-react-16';
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { Register } from '../../components/auth/Signup';
 
-Enzyme.configure({ adapter: new EnzymeAdapter() });
 
 describe('<Register/>', () => {
   const editor = shallow(<Register registerUser={jest.fn()} />);

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for components/auth/Signup.js</title>
+    <title>Code coverage report for components/auth/login.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -16,7 +16,7 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../index.html">All files</a> / <a href="index.html">components/auth</a> Signup.js
+      <a href="../../index.html">All files</a> / <a href="index.html">components/auth</a> login.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
@@ -115,31 +115,7 @@
 70
 71
 72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+73</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -148,20 +124,18 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -170,16 +144,12 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -212,25 +182,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -238,17 +190,16 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import {signUp} from '../../actions/signUpAction';
+import { Link } from 'react-router-dom';
+import {Login} from '../../actions/login';
 &nbsp;
 // import food from '../../images/food.jpg';
 &nbsp;
-export class Register extends React.Component {
+export class Userlogin extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      email:'',
       username:'',
-      telephone:'',
       password: ''
     };
     this.onChange = this.onChange.bind(this);
@@ -258,18 +209,14 @@ export class Register extends React.Component {
   onChange(e){
     return this.setState({ [e.target.name]: e.target.value });
   }
-&nbsp;
   
   onSubmit(e) {
     e.preventDefault();
     const newUser = {
       username: this.state.username,
-      email: this.state.email,
-      password: this.state.password,
-      telephone:this.state.telephone
+      password: this.state.password
     };
-    this.props.signUp(newUser, this.props.history);
-    
+    this.props.Login(newUser, this.props.history);  
   }
 &nbsp;
   render() {
@@ -281,33 +228,12 @@ export class Register extends React.Component {
                   {/* &lt;img src={food} alt="User" className="food"/&gt; */}
               &lt;/div&gt;
               &lt;div className="container"&gt;
-&nbsp;
                     &lt;label forhtml="username"&gt;&lt;b&gt;Username&lt;/b&gt;&lt;/label&gt;
                     &lt;input type="text"
                       placeholder="Enter Username" 
                       value={this.state.username} 
                       onChange={this.onChange} 
                       name="username" 
-                      required/&gt;
-&nbsp;
-                    &lt;label forhtml="Email"&gt;&lt;b&gt;Email&lt;/b&gt;&lt;/label&gt;
-                    &lt;input 
-                      type="email" 
-                      placeholder="example@gmail.com" 
-                      name="email" 
-                      value={this.state.email}
-                      onChange={this.onChange} 
-                      required/&gt;
-&nbsp;
-                    &lt;label forhtml="telephone"&gt;&lt;b&gt;Phone number&lt;/b&gt;&lt;/label&gt;
-                    &lt;input 
-                      type="text" 
-                      id="telephone" 
-                      placeholder="+256-703-492035" 
-                      pattern="\+[0-9]{1,3}-[0-9]{3}-[0-9]{6}"
-                      value={this.state.telephone}
-                      onChange={this.onChange} 
-                      name="telephone" 
                       required/&gt;
 &nbsp;
                     &lt;label forhtml="password"&gt;&lt;b&gt;Password&lt;/b&gt;&lt;/label&gt;
@@ -319,8 +245,10 @@ export class Register extends React.Component {
                       placeholder="***************"
                       name="password" 
                       required/&gt;
-&nbsp;
-                      &lt;input type="submit" className="signupbtn" value="Register"/&gt;
+                      &lt;input type="submit" className="signupbtn" value="Login"/&gt;
+                      &lt;Link to="/signup"&gt;
+                      &lt;h4&gt;Sign up&lt;/h4&gt;
+                      &lt;/Link&gt;
               &lt;/div&gt;
         &lt;/form&gt;
     &lt;/div&gt;
@@ -331,7 +259,7 @@ export class Register extends React.Component {
 }
 &nbsp;
 &nbsp;
-export default connect(null, {signUp})(Register);</pre></td></tr>
+export default connect(null, {Login})(Userlogin);</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
