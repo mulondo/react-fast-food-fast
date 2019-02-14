@@ -1,0 +1,21 @@
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  h2{
+      color: #f2f2f2;
+      margin-top:50px;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .logout{
+      float: right;
+      padding-right: 10;
+      color:#fff;
+      margin-top:-40px;
+      margin-right: 10px;
+      cursor: pointer;
+  }
+  
+ 
